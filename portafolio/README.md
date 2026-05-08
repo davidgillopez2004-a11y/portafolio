@@ -1,2 +1,0 @@
-# portafolio
-Proyecto con Bootstrap
