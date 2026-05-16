@@ -93,7 +93,20 @@ h1 {
 
 .proyecto {
     padding: 40px;
+}
 
+.proyecto-card {
+  border: 3px solid aquamarine;   
+  min-height: 250px;             
+  display: flex;                  /* Para centrar el texto */
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;             
+  transition: 0.3s;              
+}
+
+.proyecto-card:hover {
+  transform: scale(1.02);         /* Efecto al pasar el mouse */
 }
 
 .hero-inferior-imagen {
