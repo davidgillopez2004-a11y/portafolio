@@ -92,7 +92,7 @@ h1 {
 /*Proyecto*/
 
 .proyecto {
-    padding: 40px;
+    padding: 40px 40px 60px 40px;
 }
 
 .proyecto-card {
@@ -114,6 +114,30 @@ h1 {
     height: auto; 
     display: block; 
     margin: 20px auto; 
+}
+
+.proyecto-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+
+.proyecto i{
+    font-size: 2.5rem;
+    color: rgb(21, 156, 134);
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
 }
 
 
