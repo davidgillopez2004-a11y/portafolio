@@ -1,23 +1,30 @@
 /* Barra de Navegación */
 .navbar {
-    padding: 2rem;
-    background-color: beige;
+    padding: 1rem 2rem;
+    background-color: #1a1e29; 
+    border-bottom: 1px solid #2d3748;
 }
 
-.navbar-collapse {
-    align-items: center;
+.navbar-brand {
+    color: #f8fafc !important; 
+    font-weight: bold;
 }
 
-.navbar-nav {
-    margin-left: auto; 
+.navbar-brand:hover {
+    color: #06b6d4 !important; 
 }
 
-.navbar .nav-link {
+/* Color de los enlaces del menú */
+.navbar a {
+    color: #f8fafc !important; 
     font-weight: 500;
-    transition: color 0.3s;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
-.navbar .nav-link:hover {
-    color: rgb(21, 156, 134);
+
+/* Efecto al pasar el cursor */
+.navbar a:hover {
+    color: #06b6d4 !important; 
 }
 
 /*Estilos generales*/
@@ -26,14 +33,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-h1 {
-    font-size: 2.5rem; 
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400px;
-    font-style: normal;
 }
 
 .seccion-oscura {
@@ -46,7 +45,33 @@ h1 {
     background-color: white;
 }
 
-.card-titlefw-bold {
+.card-title.fw-bold {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Doodle Shadow', cursive;
+}
+.card-text {
+    font-size: 1.2rem;
+
+}
+/*HERO*/
+.hero h1 {
+    color: #f8fafc; 
+    font-weight: 700;          
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.seccion-oscura {
+    color: #f7fafc; 
+    background-color: #0f172a; 
+}
+
+.seccion-clara {
+    color: #1a202c; 
+    background-color: #f8fafc; 
+}
+
+.card-title.fw-bold {
     font-size: 2rem;
     padding: 15px 0;
     font-family: 'Rubik Doodle Shadow', cursive;
@@ -54,18 +79,11 @@ h1 {
 
 .card-text {
     font-size: 1.2rem;
+    color: #a0aec0; 
 }
 
-.rubik-doodle-shadow-regular {
-    font-family: "Rubik Doodle Shadow", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-/*Hero*/
 .hero {
-    background-color: aliceblue;
+    background-color: #1e293b; 
     min-height: 450px;
     text-align: center;
 }
@@ -82,7 +100,7 @@ h1 {
 
 .hero-principal h2 {
     font-size: 1.5rem;
-    color: grey;
+    color: #38bdf8; 
 }
 
 /*Sobre mi*/
@@ -104,17 +122,20 @@ h1 {
 }
 
 .proyecto-card {
-  border: 3px solid aquamarine;   
-  min-height: 250px;             
-  display: flex;                  /* Para centrar el texto */
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;             
-  transition: 0.3s;              
+    border: 2px solid #06b6d4;   
+    background-color: #344766;   /* Fondo por dentro de la tarjeta */
+    min-height: 250px;             
+    display: flex;                  
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;             
+    transition: 0.3s;              
 }
 
 .proyecto-card:hover {
-  transform: scale(1.02);         /* Efecto al pasar el mouse */
+  transform: scale(1.02);
+  border-color: #22d3ee;       
+  box-shadow: 0 10px 20px rgba(6, 182, 212, 0.15); 
 }
 
 .hero-inferior-imagen {
@@ -128,6 +149,7 @@ h1 {
     font-size: 25px;
     font-weight: bold;
     margin: 10px 0;
+    color: #f8fafc;
 }
 
 .badges-contenedor{
@@ -138,14 +160,16 @@ h1 {
 
 .badge{
     margin: 5px;
+    background-color: #06b6d4; 
+    color: #0f172a;
 }
 
-.proyecto i{
-    font-size: 2.5rem;
-    color: rgb(21, 156, 134);
-    background-color: #0a0a23;
-    padding: 8px 19px;
-    border-radius: 50%;
+/*Botón GitHub */
+.proyecto .btn-outline-dark i {
+    font-size: 1.2rem;
+    color: inherit;
+    background-color: transparent;
+    padding: 0;
 }
 
 
@@ -156,17 +180,18 @@ h1 {
     }
 }
 
-@media screen and (min-widht: 700px) {
+@media screen and (min-width: 700px) {
     .hero-inferior-imagen {
         max-width: 600px;
     }
-    
 }
 
 /* Habilidades */
 #habilidades .card {
     border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #1e293b;
+    color: #f8fafc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 #habilidades .card:hover {
@@ -175,17 +200,17 @@ h1 {
 
 /* Contacto */
 #contacto .form-control {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
 }
 #contacto .form-control::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.4);
 }
 #contacto .form-control:focus {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-color: aquamarine;
-    box-shadow: 0 0 0 0.25rem rgba(127, 255, 212, 0.25);
+    background-color: #1e293b;
+    border-color: #06b6d4; 
+    box-shadow: 0 0 0 0.25rem rgba(6, 182, 212, 0.25);
     color: white;
 }
 #contacto .form-label {
@@ -194,10 +219,10 @@ h1 {
 
 /* Footer */
 footer a:hover {
-    color: aquamarine !important;
+    color: #06b6d4; 
 }
+
 /* Scroll suave */
 html {
     scroll-behavior: smooth;
 }
-    
