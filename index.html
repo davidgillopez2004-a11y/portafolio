@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Gil Lopez">
+    <meta name="description" content="Portafolio de Desarrollo Web">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <!--Enlace de Bootstrap5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Iconos de Bootstrap5-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--Enlace CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>David Gil | Portafolio Desarrollo Web</title>
+    <!--Favicon-->
+    <link rel="icon" href="imagenes/icono.png" type="image/x-icon">
+    <!--Tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Navegacion-->
+
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/icono.png" alt="Logo" width="40">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <ul class="navbar-nav ms-auto align-items-center"> <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades Técnicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-md-2 mt-2 mt-md-0">
+                        <a href="imagenes/curriculum.pdf" class="btn btn-primary" download="curriculum.pdf">
+                            Descargar Currículum
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--HERO-->
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="hero-iamgen-programador rounded-circle" src="imagenes/Foto-desarrollador.svg" alt="Foto del programador" title="Programador">
+            <h1>Hola, soy David Gil López</h1>
+            <h2>Desarrollador de sitios web, tanto backend como frontend</h2>
+        </div>
+    </section>
+
+    <div class="hero-inferior text-center">
+        <img class="hero-inferior-imagen" src="imagenes/lenguaje.jpg" alt="monitor con lenguajes de programacion" title="lenguajes de programacion">
+    </div>
+
+    <!--Sobre Mi-->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+            <h2 class="card-title fw-bold">Sobre mí</h2>
+            <p class="card-text text-secondary"> Soy entusiasta de la tecnología y el aprendizaje continuo. Me apasiona profundizar en la <strong>programación</strong>, desafiar mis habilidades en los <strong>videojuegos</strong> y salir a despejarme para recargar energías.</p>
+        </div>
+    </section>
+
+    <!--Proyectos-->
+    <section id="proyectos" class="proyecto seccion-clara py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Mis Proyectos</h2>
+
+            <!--Proyecto Let me cook-->
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="proyecto-card">
+                        <div class="proyecto-contenido p-4">
+                            <h3 class="proyecto-titulo">Let Me Cook</h3>
+                            <p class="card-text">Aplicación web de recetas que permite a los usuarios explorar, buscar y guardar sus recetas favoritas. Interfaz intuitiva con sistema de filtrado por ingredientes y categorías.</p>
+                            <div class="badges-contenedor mb-3">
+                                <span class="badge bg-warning text-dark">HTML</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/Lakrofn/letmecook.git" target="_blank" class="btn btn-outline-dark">
+                                <i class="bi bi-github"></i> Ver en GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+            <!--Proyecto Star Wars-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="proyecto-card">
+                        <div class="proyecto-contenido p-4">
+                            <h3 class="proyecto-titulo">Star Wars</h3>
+                            <p class="card-text">Aplicación interactiva que consume la API de Star Wars (SWAPI) para mostrar información sobre personajes, planetas y naves del universo. Incluye búsqueda dinámica.</p>
+                            <div class="badges-contenedor mb-3">
+                                <span class="badge bg-warning text-dark">HTML</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/davidgillopez2004-a11y/ProyectoStarWars.git" target="_blank" class="btn btn-outline-dark">
+                                <i class="bi bi-github"></i> Ver en GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </section>
+
+    <!--Habilidades tecnicas-->
+    <section id="habilidades" class="seccion-clara py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Habilidades Técnicas</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-window-desktop fs-1 text-primary mb-3"></i>
+
+                        <!--Frontend-->
+                            <h4>Frontend</h4>
+                            <ul class="list-unstyled mt-3">
+                                <li><span class="badge bg-danger">HTML5</span></li>
+                                <li><span class="badge bg-primary mt-2">CSS3</span></li>
+                                <li><span class="badge bg-warning text-dark mt-2">JavaScript</span></li>
+                                <li><span class="badge bg-info mt-2">Bootstrap 5</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-server fs-1 text-success mb-3"></i>
+                        
+                        <!--Backend-->
+                            <h4>Backend</h4>
+                            <ul class="list-unstyled mt-3">
+                                <li><span class="badge bg-secondary">Python</span></li>
+                                <li><span class="badge bg-danger mt-2">Java</span></li>
+                                <li><span class="badge bg-warning text-dark mt-2">PHP</span></li>
+                                <li><span class="badge bg-dark mt-2">SQL</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto-->
+    <section id="contacto" class="seccion-oscura py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="asunto" placeholder="Asunto del mensaje">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="5" maxlength="200" placeholder="Escribe tu mensaje..." required oninput="resultado.value = this.value.length"></textarea>
+                            <small class="text-white-50">Caracteres: <output name="resultado">0</output> / 200</small>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-light btn-lg">
+                                <i class="bi bi-send"></i> Enviar mensaje
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="text-center mt-5">
+                        <p class="mb-3">O contáctame directamente:</p>
+                        <a href="mailto:davidgillopez2004@gmail.com" class="btn btn-outline-light">
+                            <i class="bi bi-envelope"></i> davidgillopez2004@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-dark text-white text-center p-4">
+        <p>© 2026 David Gil López - Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:davidgillopez2004@gmail.com" class="text-white">davidgillopez2004@gmail.com</a></p>
+        <div class="d-flex gap-4 justify-content-center align-items-center">
+            <a href="https://www.instagram.com/_daavidgl_" target="_blank" class="text-decoration-none text-white">
+                <i class="bi bi-instagram fs-2"></i>
+            </a>
+
+            <a href="https://www.facebook.com/share/1FdtV4LzPi/" target="_blank" class="text-decoration-none text-white">
+                <i class="bi bi-facebook fs-2"></i>
+            </a>
+
+            <a href="https://github.com/davidgillopez2004-a11y" target="_blank" class="text-decoration-none text-white">
+                <i class="bi bi-github fs-2"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@_daavidgl_" target="_blank" class="text-decoration-none text-white">
+                <i class="bi bi-tiktok fs-2"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/david-gil-l%C3%B3pez-a0778b3a0/" target="_blank" class="text-decoration-none text-white">
+                <i class="bi bi-linkedin fs-2"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!--Enlace JavaScript BootStrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+/* Barra de Navegación */
+.navbar {
+    padding: 1rem 2rem;
+    background-color: #1a1e29; 
+    border-bottom: 1px solid #2d3748;
+}
+
+.navbar-brand {
+    color: #f8fafc !important; 
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #06b6d4 !important; 
+}
+
+/* Color de los enlaces del menú */
+.navbar a {
+    color: #f8fafc !important; 
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Efecto al pasar el cursor */
+.navbar a:hover {
+    color: #06b6d4 !important; 
+}
+
+/*Estilos generales*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: #000000;
+}
+
+.seccion-clara {
+    color: #000000;
+    background-color: white;
+}
+
+.card-title.fw-bold {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Doodle Shadow', cursive;
+}
+.card-text {
+    font-size: 1.2rem;
+
+}
+/*HERO*/
+.hero h1 {
+    color: #f8fafc; 
+    font-weight: 700;          
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.seccion-oscura {
+    color: #f7fafc; 
+    background-color: #0f172a; 
+}
+
+.seccion-clara {
+    color: #1a202c; 
+    background-color: #f8fafc; 
+}
+
+.card-title.fw-bold {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Doodle Shadow', cursive;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #a0aec0; 
+}
+
+.hero {
+    background-color: #1e293b; 
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.hero-iamgen-programador{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #38bdf8; 
+}
+
+/*Sobre mi*/
+
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+/*Proyecto*/
+
+.proyecto {
+    padding: 40px 40px 60px 40px;
+}
+
+.proyecto-card {
+    border: 2px solid #06b6d4;   
+    background-color: #344766;   /* Fondo por dentro de la tarjeta */
+    min-height: 250px;             
+    display: flex;                  
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;             
+    transition: 0.3s;              
+}
+
+.proyecto-card:hover {
+  transform: scale(1.02);
+  border-color: #22d3ee;       
+  box-shadow: 0 10px 20px rgba(6, 182, 212, 0.15); 
+}
+
+.hero-inferior-imagen {
+    width: 350px;
+    height: auto; 
+    display: block; 
+    margin: 20px auto; 
+}
+
+.proyecto-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #f8fafc;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+    background-color: #06b6d4; 
+    color: #0f172a;
+}
+
+/*Botón GitHub */
+.proyecto .btn-outline-dark i {
+    font-size: 1.2rem;
+    color: inherit;
+    background-color: transparent;
+    padding: 0;
+}
+
+
+/* Ajustes para móviles */
+@media screen and (max-width: 750px) {
+    .navbar-brand {
+       display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+/* Habilidades */
+#habilidades .card {
+    border: none;
+    background-color: #1e293b;
+    color: #f8fafc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+#habilidades .card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contacto */
+#contacto .form-control {
+    background-color: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+#contacto .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+#contacto .form-control:focus {
+    background-color: #1e293b;
+    border-color: #06b6d4; 
+    box-shadow: 0 0 0 0.25rem rgba(6, 182, 212, 0.25);
+    color: white;
+}
+#contacto .form-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Footer */
+footer a:hover {
+    color: #06b6d4; 
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
